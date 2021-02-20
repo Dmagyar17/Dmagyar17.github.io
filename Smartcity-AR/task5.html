@@ -13,11 +13,12 @@
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
 
-				<a-video src="#demo" width="16" height="9" position="0 0 -20"></a-video>
+				<a-asset-item id="helmet" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
+			<a-video src="#demo" width="16" height="9" position="0 0 -20"></a-video>
         </a-scene>
     </body>
 </html>
