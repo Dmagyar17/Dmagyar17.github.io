@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <!-- we import arjs version without NFT but with marker 
@@ -9,17 +8,17 @@
         <a-scene embedded arjs>
             <!-- handle hiro marker -->
             <a-marker preset='hiro'>
-                <a-cylinder position="0 0.5 0" radius="0.5" height="1.5" color="#FFC65D">
-                    <!-- add a torus in a red box --> 
-					<a-text value="Hello World"></a-text>
+				<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D">
+				<a-text
+					value="Hello World"
+					scale="50 50 50" ></a-text>
 					<a-entity scale="120 120 120"></a-entity>
-                </a-cylinder>
-
+				</a-cylinder>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
+			<a-entity scale="120 120 120"></a-entity>
         </a-scene>
     </body>
-
 </html>
